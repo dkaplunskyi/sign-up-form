@@ -4,11 +4,13 @@
   font-weight: bold;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
+body {
   display: flex;
   width: 1440px;
   margin: auto;
@@ -24,7 +26,7 @@ aside {
 
 aside .logo-wrapper {
   position: relative;
-  top: 22vh;
+  top: 23vh;
   height: 10rem;
   width: 100%;
   padding: 1rem 0;
@@ -39,7 +41,7 @@ aside .logo-wrapper img {
   width: auto;
 }
 
-aside .logo-wrapper div{
+aside .logo-wrapper div {
   color: white;
   text-transform: uppercase;
   font-size: 7rem;
@@ -48,7 +50,41 @@ aside .logo-wrapper div{
 }
 
 main {
-  flex-basis: 60%;
-  height: 100vh;
-  background: bisque;
+  /* height: 100vh; */
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main form .header-section {
+  flex-grow: 1;
+  background-color: rgb(240, 240, 240);
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+main .header-section h2:last-child {
+  margin: 2rem 0 4rem 0;
+}
+
+main form .form-section {
+  height: 65vh;
+  min-height: 600px;
+  /* padding: 0 3rem; */
+}
+
+main form .form-section .top-wrapper {
+  height: 50%;
+  padding: 0 3rem;
+}
+
+main form .form-section .bottom-wrapper {
+  background-color: rgb(240, 240, 240);
+  height: 50%;
+  padding: 0 3rem;
 }
