@@ -17,7 +17,7 @@
     </div>
   </aside>
   <main>
-    <form action="/" method="post">
+    <form action="/" method="POST">
       <div class="header-section">
         <h2>This is not a real online service! You know you need something <br>
           like this in your life to help you realize your deepest dreams. <br>
@@ -28,52 +28,50 @@
       <div class="form-section">
         <div class="top-wrapper">
           <h2>Let's do it!</h2>
+          
           <div class="row">
             <div>
               <label for="firstName">First name</label>
-              <input type="text" name="firstName" id="firstName">
+              <input required type="text" name="firstName" id="firstName">
+              <div class="error">* First name is required</div>
+              <span class="valid-msg"></span>
             </div>
-          </div>
-
-          <div class="row">
             <div>
               <label for="lastName">Last name</label>
-              <input type="text" name="lastName" id="lastName">
+              <input required type="text" name="lastName" id="lastName">
+              <div class="error">* Last name is required</div>
             </div>
           </div>
 
           <div class="row">
             <div>
               <label for="email">Email</label>
-              <input type="email" name="email" id="email">
+              <input required type="email" name="email" id="email">
+              <div class="error">* Email is required</div>
             </div>
-          </div>
-
-          <div class="row">
             <div>
               <label for="phoneNumber">Phone number</label>
-              <input type="tel" name="phoneNumber" id="phoneNumber">
+              <input required type="tel" name="phoneNumber" id="phoneNumber">
+              <div class="error">* Phone number is required</div>
             </div>
           </div>
 
           <div class="row">
             <div>
               <label for="password">Password</label>
-              <input type="password" name="password" id="password">
+              <input required type="password" name="password" id="password" minlength="5" maxlength="16">
+              <div class="error">* Passwords do not match</div>
             </div>
-          </div>
-
-          <div class="row">
             <div>
               <label for="password2">Confirm password</label>
-              <input type="password2" name="password2" id="password2">
+              <input required type="password" name="password2" id="password2" minlength="5" maxlength="16">
             </div>
           </div>
-          
         </div>
+
         <div class="bottom-wrapper">
-          <input type="submit" value="Create Account">
-          <div>Already have an account? <a href="http://">log in</a></div>
+          <input type="submit" value="Create Account" id="submit">
+          <div>Already have an account? <a href="#">Log in</a></div>
         </div>
       </div>
     </form>
