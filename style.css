@@ -98,6 +98,7 @@ main form .form-section .bottom-wrapper {
   background-color: rgb(245, 245, 245);
   height: 25vh;
   padding: 0 3rem;
+  padding-right: 20%;
 }
 
 
@@ -111,8 +112,7 @@ main .form-section .top-wrapper .row div {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  width: 35%;
-  /* text-transform: uppercase; */
+  width: 100%;
   font-weight: 500;
   color: rgb(60, 60, 60);
 }
