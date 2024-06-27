@@ -1,5 +1,4 @@
 const submit = document.querySelector('#submit');
-// const error = document.querySelector('.error');
 const password = document.querySelector('#password');
 const password2 = document.querySelector('#password2');
 const firstName = document.querySelector('#firstName');
@@ -8,9 +7,6 @@ const email = document.querySelector('#email');
 const phoneNumber = document.querySelector('#phoneNumber');
 
 submit.addEventListener('click', (e) => {
-  console.log(password.value);
-  console.log(password2.value);
-
   if (password.value !== password2.value || password.value === '') {
     e.preventDefault();
     password.nextElementSibling.style.display = 'block';
@@ -23,7 +19,6 @@ submit.addEventListener('click', (e) => {
 
     password.classList.remove('errorMsgStyle');
     password2.classList.remove('errorMsgStyle');
-    alert('Succeeded!');
   }
 
   if (firstName.value === '') {
@@ -55,6 +50,7 @@ password.addEventListener('keydown', () => {
 });
 
 password2.addEventListener('keydown', () => {
+  password.nextElementSibling.style.display = 'none';
   password.classList.remove('errorMsgStyle');
   password2.classList.remove('errorMsgStyle');
 });

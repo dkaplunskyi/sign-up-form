@@ -12,7 +12,7 @@
 
 body {
   display: flex;
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
   background-color: black;
 }
@@ -52,6 +52,8 @@ aside .logo-wrapper div {
 
 main {
   font-family: sans-serif;
+  height: 100vh;
+  flex-basis: 60%;
 }
 
 main form {
@@ -61,30 +63,32 @@ main form {
 }
 
 main form .header-section {
+  height: 25vh;
   flex-grow: 1;
   background-color: rgb(245, 245, 245);
   padding: 0 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  font-size: 1.2rem;
+  justify-content: space-evenly;
+  font-size: 1rem;
 }
 
 main .header-section h2:last-child {
-  margin: 2rem 0 4rem 0;
+  /* margin: 1rem 0 2rem 0; */
 }
 
 main form .form-section {
-  height: 65vh;
-  min-height: 700px;
+  /* height: 65vh;
+  min-height: 700px; */
 }
 
 main form .form-section .top-wrapper {
-  height: 50%;
+  height: 50vh;
   padding: 0 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 5%;
   background-color: white;
   box-shadow: 0px 13px 10px -10px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -92,7 +96,7 @@ main form .form-section .top-wrapper {
 
 main form .form-section .bottom-wrapper {
   background-color: rgb(245, 245, 245);
-  height: 50%;
+  height: 25vh;
   padding: 0 3rem;
 }
 
@@ -115,6 +119,7 @@ main .form-section .top-wrapper .row div {
 
 main .form-section .top-wrapper .row label{
   text-transform: uppercase;
+  font-size: 0.8rem;
 } 
 
 main .form-section .top-wrapper .row .error {
@@ -122,6 +127,7 @@ main .form-section .top-wrapper .row .error {
   width: 100%;
   color: red;
   font-weight: 100;
+  font-size: 0.7rem;
   display: none;
 }
 
@@ -140,7 +146,7 @@ main .bottom-wrapper input {
   margin: 2rem 0;
   background-color: darkolivegreen;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   border-radius: 10px;
   border: none;
 }
@@ -157,6 +163,7 @@ main .bottom-wrapper div {
 main .bottom-wrapper div a {
   text-decoration: none;
   color: darkolivegreen;
+  font-weight: bold;
 }
 
 .errorMsgStyle {
