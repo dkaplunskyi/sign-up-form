@@ -85,6 +85,7 @@ main form .form-section {
 main form .form-section .top-wrapper {
   height: 50vh;
   padding: 0 3rem;
+  /* padding-right: 20%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,6 +133,7 @@ main .form-section .top-wrapper .row .error {
 }
 
 input {
+  font-size: 1.1rem;
   padding: 0.7rem;
   border: 1px solid lightgrey;
   border-radius: 5px;
